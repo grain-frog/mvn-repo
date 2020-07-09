@@ -7,6 +7,12 @@
         <groupId>com.gooy.monomer</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <properties>
+        <github.global.server>github</github.global.server>
+        <repo-version>1.0.0-RELEASE</repo-version>
+        <!--固定版本使用反缀 -RELEASE   如：0.0.1-RELEASE -->
+    </properties>
+
     <modelVersion>4.0.0</modelVersion>
     <version>${repo-version}</version>
     <groupId>com.gooy.monomer.framework</groupId>
@@ -20,17 +26,47 @@
         <module>monomer-framework-keeper</module>
         <module>monomer-framework-doc</module>
     </modules>
-    <properties>
-        <github.global.server>github</github.global.server>
-        <repo-version>1.0.0-RELEASE</repo-version>
-        <!--固定版本使用反缀 -RELEASE   如：0.0.1-RELEASE -->
-    </properties>
     <distributionManagement>
         <snapshotRepository>
             <id>github</id>
             <url>https://github.com/grain-frog/repository.git</url>
         </snapshotRepository>
+
     </distributionManagement>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.gooy.monomer.framework</groupId>
+                <artifactId>monomer-framework-datasource</artifactId>
+                <version>${repo-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gooy.monomer.framework</groupId>
+                <artifactId>monomer-framework-core</artifactId>
+                <version>${repo-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gooy.monomer.framework</groupId>
+                <artifactId>monomer-framework-http</artifactId>
+                <version>${repo-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gooy.monomer.framework</groupId>
+                <artifactId>monomer-framework-cache</artifactId>
+                <version>${repo-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gooy.monomer.framework</groupId>
+                <artifactId>monomer-framework-keeper</artifactId>
+                <version>${repo-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gooy.monomer.framework</groupId>
+                <artifactId>monomer-framework-doc</artifactId>
+                <version>${repo-version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
