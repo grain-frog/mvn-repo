@@ -22,8 +22,10 @@
     </modules>
 
     <properties>
+        <!--固定版本使用反缀 -RELEASE   如：0.0.1-RELEASE -->
         <github.global.server>github</github.global.server>
         <monmer-framework-version>1.0.0-RELEASE</monmer-framework-version>
+
         <spring-boot-version>2.3.0.RELEASE</spring-boot-version>
         <servlet-api-version>4.0.1</servlet-api-version>
         <web-jjwt-vesion>0.9.1</web-jjwt-vesion>
@@ -38,7 +40,6 @@
         <tk-version>2.1.5</tk-version>
         <aspectj-version>1.9.5</aspectj-version>
         <lombok-version>1.18.12</lombok-version>
-        <!--固定版本使用反缀 -RELEASE   如：0.0.1-RELEASE -->
     </properties>
 
     <distributionManagement>
