@@ -5,10 +5,10 @@
     <parent>
         <artifactId>monomer-framework</artifactId>
         <groupId>com.gooy.monomer.framework</groupId>
-        <version>${repo-version}</version>
+        <version>${monmer-framework-version}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <version>${repo-version}</version>
+    <version>${monmer-framework-version}</version>
     <groupId>com.gooy.monomer.framework</groupId>
     <artifactId>monomer-framework-cache</artifactId>
 
@@ -16,6 +16,16 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.data</groupId>
+                    <artifactId>spring-data-redis</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework.data</groupId>
+                    <artifactId>spring-data-commons</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -24,11 +34,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
         </dependency>
         <dependency>
             <groupId>redis.clients</groupId>
