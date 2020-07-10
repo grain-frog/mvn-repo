@@ -8,7 +8,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <version>${monmer-framework-version}</version>
+    <version>1.0.0-RELEASE</version>
     <groupId>com.gooy.monomer.framework</groupId>
     <artifactId>monomer-framework</artifactId>
     <packaging>pom</packaging>
