@@ -5,10 +5,10 @@
     <parent>
         <artifactId>monomer-framework</artifactId>
         <groupId>com.gooy.monomer.framework</groupId>
-        <version>${monmer-framework-version}</version>
+        <version>1.0.0-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <version>${monmer-framework-version}</version>
+    <version>1.0.0-RELEASE</version>
     <groupId>com.gooy.monomer.framework</groupId>
     <artifactId>monomer-framework-http</artifactId>
 
