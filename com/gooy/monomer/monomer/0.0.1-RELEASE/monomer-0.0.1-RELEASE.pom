@@ -9,7 +9,6 @@
     <version>0.0.1-RELEASE</version>
     <modules>
         <module>monomer-framework</module>
-<!--        <module>monomer-api</module>-->
     </modules>
     <properties>
         <github.global.server>github</github.global.server>
@@ -29,6 +28,11 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
+        </repository>
+        <repository>
+            <id>github</id>
+            <name>mvn repository</name>
+            <url>https://raw.githubusercontent.com/grain-frog/repository.git</url>
         </repository>
     </repositories>
 
